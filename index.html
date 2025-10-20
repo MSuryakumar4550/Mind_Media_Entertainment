@@ -1,0 +1,355 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mind Media - Official Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.1/ScrollTrigger.min.js"></script>
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="#home" class="logo">
+                <img src="Logo1.jpg" height="15" width="25"/>
+                    <rect width="100" height="80" rx="8" fill="#FFD600"/>
+                    <path d="M10 20H90V30H10V20Z" fill="black"/>
+                    <path d="M10 50L20 50V70H30V50L50 70L70 50V70H80V50L90 50V40H10V50Z" fill="black"/>
+                </svg>
+                Mind Media Entertainment
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero-content reveal">
+                <h1>Crafting Stories, <span class="highlight">Creating Worlds</span></h1>
+                <p>We are Mind Media, a full-service creative production house dedicated to bringing your vision to life through stunning visuals and compelling narratives.</p>
+                <a href="#portfolio" class="cta-button">View Our Work</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container reveal">
+                <h2 class="section-title">Who We Are</h2>
+                <p class="section-subtitle">We are more than a production company; we are architects of emotion and narrative, committed to pushing the boundaries of visual storytelling.</p>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="Logo.png" alt="Mind Media Studio Space" />
+                    </div>
+                    <div class="about-text">
+                        <h3>Our Mission</h3>
+                        <p>At Mind Media, our mission is to translate powerful ideas into unforgettable visual experiences. We believe that every frame has a purpose and every story deserves to be told with passion and precision.</p>
+                        <p>Founded by a creator with a deep connection to a global audience, we understand the language of digital media and the art of engagement. We combine cutting-edge technology with raw creative talent to produce content that not only looks spectacular but also resonates deeply with viewers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container reveal">
+                <h2 class="section-title">What We Do</h2>
+                <p class="section-subtitle">We offer a comprehensive suite of production services, tailored to meet the needs of any creative project, big or small.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9A2.25 2.25 0 0 0 13.5 5.25h-9A2.25 2.25 0 0 0 2.25 7.5v9A2.25 2.25 0 0 0 4.5 18.75Z" />
+                            </svg>
+                        </div>
+                        <h3>Video Production</h3>
+                        <p>Full-scale production from concept to final cut, including filming, directing, and on-set management.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                               <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z" />
+                           </svg>
+                        </div>
+                        <h3>Post-Production</h3>
+                        <p>Expert editing, color grading, visual effects, and sound design to bring your footage to life.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                            </svg>
+                        </div>
+                        <h3>Creative Direction</h3>
+                        <p>Strategic development of concepts, scripts, and storyboards to ensure your message is powerful and clear.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <section id="portfolio">
+    <div class="container reveal">
+        <h2 class="section-title">Our Work</h2>
+        <p class="section-subtitle">Explore a selection of our recent projects that showcase our passion for creativity and technical excellence.</p>
+        
+        <div class="projects-grid">
+            
+            <div class="project-item" data-video-id="YOUR_VIDEO_ID_1">
+                <img src="personal_branding.jpg" alt="Project 1 Thumbnail" />
+                <div class="overlay"><h3>Personal Branding</h3></div>
+            </div>
+
+            <div class="project-item" data-video-id="YOUR_VIDEO_ID_2">
+                <img src="content-creation.jpg" alt="Project 2 Thumbnail" />
+                <div class="overlay"><h3>Content Creation</h3></div>
+            </div>
+
+            <div class="project-item" data-video-id="YOUR_VIDEO_ID_3">
+                <img src="podcast.png" alt="Project 3 Thumbnail" />
+                <div class="overlay"><h3>Podcasts</h3></div>
+            </div>
+
+            <div class="project-item" data-video-id="YOUR_VIDEO_ID_4">
+                <img src="Content_Management.png" alt="Project 4 Thumbnail" />
+                <div class="overlay"><h3>Content Management</h3></div>
+            </div>
+
+            <div class="project-item" data-video-id="YOUR_VIDEO_ID_5">
+                <img src="brand_promotion.png" alt="Project 5 Thumbnail" />
+                <div class="overlay"><h3>Advertisements</h3></div>
+            </div>
+
+            <div class="project-item" data-video-id="YOUR_VIDEO_ID_6">
+                <img src="video_editing.png" alt="Project 6 Thumbnail" />
+                <div class="overlay"><h3>Video Edition</h3></div>
+            </div>
+            
+            <div class="project-item" data-video-id="YOUR_VIDEO_ID_1">
+                <img src="personal_branding.jpg" alt="Project 1 Thumbnail" />
+                <div class="overlay"><h3>Personal Branding</h3></div>
+            </div>
+
+            <div class="project-item" data-video-id="YOUR_VIDEO_ID_2">
+                <img src="content-creation.jpg" alt="Project 2 Thumbnail" />
+                <div class="overlay"><h3>Content Creation</h3></div>
+            </div>
+
+            <div class="project-item" data-video-id="YOUR_VIDEO_ID_3">
+                <img src="podcast.png" alt="Project 3 Thumbnail" />
+                <div class="overlay"><h3>Podcasts</h3></div>
+            </div>
+
+            <div class="project-item" data-video-id="YOUR_VIDEO_ID_4">
+                <img src="Content_Management.png" alt="Project 4 Thumbnail" />
+                <div class="overlay"><h3>Content Management</h3></div>
+            </div>
+
+            <div class="project-item" data-video-id="YOUR_VIDEO_ID_5">
+                <img src="brand_promotion.png" alt="Project 5 Thumbnail" />
+                <div class="overlay"><h3>Advertisements</h3></div>
+            </div>
+
+            <div class="project-item" data-video-id="YOUR_VIDEO_ID_6">
+                <img src="video_editing.png" alt="Project 6 Thumbnail" />
+                <div class="overlay"><h3>Video Edition</h3></div>
+            </div>
+
+        </div> </div>
+</section>
+
+        <section id="testimonials">
+            <div class="container reveal">
+                <h2 class="section-title">From Our Clients</h2>
+                <div class="testimonials-wrapper">
+                    <div id="testimonial-carousel">
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <q>They didn't just film a video; they captured the soul of our brand. Absolutely breathtaking work.</q>
+                                <p>- CEO, Aurelius Watches</p>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <q>Cinematic magic delivered on time—brilliant team and exceptional talent!</q>
+                                <p>- Quantum Dynamics</p>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <q>Their creativity and professionalism went far beyond our expectations.</q>
+                                <p>- Gourmet Foods Co.</p>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <q>Their creative vision turned our concept into a masterpiece. Every frame speaks elegance and emotion.</q>
+                                <p>- Marketing Head, Nova Interiors</p>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <q>Working with them was effortless — they understood our goals instantly and delivered beyond expectations.</q>
+                                <p>- Founder, The Velvet Studio</p>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <q>From concept to final edit, their professionalism and storytelling made our brand truly shine.</q>
+                                <p>- Director, Horizon Events</p>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <q>Their attention to detail and cinematic style made our campaign unforgettable. Highly recommended!</q>
+                                <p>- Creative Lead, Zenith Apparel</p>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <q>They captured the essence of our brand with precision and artistry — a team you can truly trust.</q>
+                                <p>- CEO, Lumina Skincare</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container reveal">
+                <h2 class="section-title">Let's Create Together</h2>
+                <div class="contact-content">
+                    <p class="section-subtitle">Have a project in mind? We're ready to listen. Contact us to discuss your ideas and learn how we can help bring them to the screen.</p>
+                    <a href="mailto:sethu@mindmedia.pro" class="cta-button">sethu@mindmedia.pro</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <div class="contact-section">
+                <div class="form-container">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Sarveth Kumar">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="sarvethkumar@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-main">
+                <div class="footer-column footer-brand">
+                    <img src="Logo1.jpg" alt="Mind Media Entertainment Logo" class="footer-logo">
+                    <h4>Mind Media Entertainment</h4>
+                    <p>Crafting cinematic experiences that captivate and inspire. Your story, our expertise.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Video Production</a></li>
+                        <li><a href="#">Post-Production</a></li>
+                        <li><a href="#">Creative Direction</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Mind Media Entertainment. All rights reserved.</p>
+                <p class="credits">Designed & Developed with passion</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <iframe
+              id="videoPlayer"
+              src=""
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
