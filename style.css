@@ -1,6 +1,6 @@
 /* CSS Reset and Global Styles */
 :root {
-    --primary-gold: #FFD600;
+    --primary-gold: #d4bf51;
     --dark-bg: #121212;
     --card-bg: #1E1E1E;
     --text-light: #F5F5F5;
@@ -563,7 +563,7 @@ section {
     background: linear-gradient(0deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.7) 25%, transparent 100%);
     padding: 40px 20px 20px 20px;
     text-align: left;
-    transition: background 0.4s ease;
+    transition: background 0.2s ease;
 }
 
 .project-item:hover .overlay {
@@ -862,7 +862,7 @@ section {
 
 /* --- Main Wrapper --- */
 .site-footer {
-    background-color: #000; /* Black background */
+    background-color: #121212; 
     padding: 80px 0 30px 0;
     color: var(--text-medium);
     font-size: 15px;
