@@ -40,7 +40,7 @@ body {
     font-weight: 700;
     text-align: center;
     margin-bottom: 10px;
-    color: var(--primary-gold);
+    color: #d4bf51;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -57,13 +57,63 @@ body {
 
 .cta-button {
     display: inline-block;
-    background-color: var(--primary-gold);
+    background-color: var(#d4bf51);
     color: var(--dark-bg);
     padding: 12px 30px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* This is the default style for desktop */
+.site-logo {
+  height: 80px;
+  width: auto;  /* 'auto' keeps the logo from stretching or squishing */
+}
+
+/* This is a MEDIA QUERY. 
+  It applies the styles inside it ONLY if the screen is 600px wide or less (like a mobile phone).
+*/
+@media (max-width: 600px) {
+  .site-logo {
+    height: 50px; /* Make the logo smaller on mobile */
+    width: auto;
+  }
+}
+
+/* --- Base Styles (Mobile-First) --- */
+/* This is how the buttons will look on small screens */
+.hero-button-container {
+  display: flex;
+  flex-direction: column; /* Stacks them vertically */
+  align-items: center;     /* Centers the stacked buttons */
+  width: 100%;             /* Ensures the container takes full width */
+  gap: 1rem;               /* Adds 16px of space BETWEEN the buttons */
+}
+
+/* Optional: Make mobile buttons wider */
+.cta-button {
+  width: 80%; /* Or a fixed width like 250px */
+  max-width: 300px; /* Prevents them from being too wide */
+  text-align: center;
+  box-sizing: border-box; /* Ensures padding doesn't break the width */
+}
+
+
+/* --- Desktop Styles --- */
+/* This media query applies ONLY to screens 768px and wider */
+@media (min-width: 768px) {
+  .hero-button-container {
+    flex-direction: row;     /* Puts them side-by-side */
+    justify-content: center; /* Centers them horizontally as a group */
+    gap: 1.5rem;             /* Adds a bit more space for desktop */
+  }
+
+  /* Reset the mobile-specific button width */
+  .cta-button {
+    width: auto; /* Lets the button size itself based on its text */
+  }
 }
 
 .cta-button:hover {
@@ -404,7 +454,7 @@ section {
 .about-text h3 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: var(--primary-gold);
+    color: #d4bf51;
     position: relative;
     display: inline-block;
 }
@@ -416,7 +466,7 @@ section {
     left: 0;
     width: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--primary-gold), transparent);
+    background: linear-gradient(90deg, #d4bf51, transparent);
     animation: expandLine 1s ease-out 0.5s forwards;
 }
 
@@ -1248,9 +1298,21 @@ section {
 .project-item,
 .testimonial-content,
 .about-text,
-.section-subtitle,
 .hero-content p {
     color: var(--text-light); /* This was a bug fix, ensuring text is light */
+}
+
+.section-subtitle {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #e7e0e0;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.5px;    
+  margin-bottom: 60px;
 }
 
 /* Decorative shapes default style (optional) */
@@ -1258,4 +1320,143 @@ section {
     position: absolute;
     pointer-events: none;
     will-change: transform, opacity;
+}
+
+.milestones {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 80px 0;
+  background: #1A1A1A; /* dark gray background */
+  padding: 60px 20px;
+  border-radius: 15px;
+}
+
+.milestone .counter {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d4bf51; /* primary yellow for numbers */
+  display: block;
+}
+
+.milestone p {
+  font-size: 1.1rem;
+  color: #FFFFFF; /* white text for readability */
+  margin-top: 10px;
+}
+
+.achievements {
+  text-align: center;
+  background: #1A1A1A; /* dark gray background */
+  padding: 60px 20px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #d4bf51; /* bright yellow */
+}
+
+.milestones {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.milestone .counter {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d4bf51; /* yellow numbers */
+  display: block;
+}
+
+.milestone p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.unique-quote {
+  font-family: 'Montserrat', sans-serif;  /* Clean, modern font */
+  font-style: italic;                     /* Italic for emphasis */
+  font-weight: 600;                       /* Slightly bold */
+  font-size: 1.8rem;                      /* Readable and noticeable */
+  color: #d4bf51;                         /* Gold color */
+  letter-spacing: 1.5px;                  /* Spaced letters for elegance */
+  line-height: 1.6;                       /* Better readability */
+  background: linear-gradient(120deg, #d4bf51, #ffd700); /* Gradient text */
+  -webkit-background-clip: text;          /* Clip gradient to text */
+  -webkit-text-fill-color: transparent;   /* Make text take gradient color */
+  text-align: center;
+  padding: 20px 10px;
+  border-left: 4px solid #d4bf51;        /* Unique side accent */
+  border-radius: 5px;
+}
+a:hover {
+    color: var(--primary-gold);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-section {
+  max-width: 900px; /* Limits width for better center alignment */
+  margin: 60px auto; /* Centers the section horizontally with top & bottom spacing */
+  text-align: center; /* Centers all text and buttons */
+  padding: 120px 20px 80px 20px; /* Top padding increased */
+  background: rgba(44, 44, 44, 0.85); /* Slightly transparent dark background */
+  border-radius: 25px; /* Curved edges */
+  color: #000000; /* Black text for headings */
+  backdrop-filter: blur(9px); /* Glass-like blur effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #FFD600; /* Brand yellow */
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #FFFFFF; /* White text on dark background */
+  margin-bottom: 40px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta-button.primary {
+  background-color: #d4bf51; /* Brand yellow */
+  color: #000000; /* Black text */
+}
+
+.cta-button.primary:hover {
+  background-color: #FFD300;
+}
+
+.cta-button.secondary {
+  background-color: #000000; /* Black button */
+  color: #d4bf51; /* Yellow text */
+  border: 2px solid #d4bf51;
+}
+
+.cta-button.secondary:hover {
+  background-color: #333333;
+  color: #FFD300;
 }
